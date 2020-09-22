@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il mio splendido blog</title>
+</head>
+
+<body>
+    <h1>Benvenuto nel mio blog</h1>
+	<h2>Blog personale di Gabriele Cervetti</h2>
+	<nav>
+		<ul>
+			<li><a href="contatti.html">Contatti</a><li>
+			<li><a href="musica.html">Musica</a><li>
+			<li><a href="video.html">Video</a><li>
+			<li><a href="geolocalizzazione.html">Dove ti trovi</a><li>
+		</ul>
+	<nav>
+	
+	<canvas id="myCanvas" width="200" height="100"></canvas>
+	<script>
+		var c=document.getElementById("myCanvas");
+		var ctx=c.getContext("2d");
+		ctx.font="30px Arial";
+		ctx.fillText("Ciao a tutti",10,50);
+	</script>
+		
+	<p>Qui potrai vedere tutto ciò che faccio giornalmente</p>
+
+	<ul>
+		<li> Foto</li>
+		<li> Video</li>
+		<li> Cosa ascolto</li>
+	</ul>
+
+    <p>Foto</p>
+    <img src="img/img1.jpg"width="375"height="275">
+    <img src="img/img2.jpg"width="400"height="250">
+    <img src="img/img3.jpg"width="200"height="125">
+	
+	<section>
+		<header>
+			<h2>Articoli</h2>
+		</header>
+		<article>
+			<h3>Presentazione</h3>
+			<p>Ciao a tutti, sono Gabriele e questo è il mio blog...<a href="articoli/presentazione.html>">Clicca qui per l'articolo completo!</a></p>
+		</article>
+		<article>
+			<header>
+				<h3>Le mie passioni</h3>
+			</header>
+			<p>La mia passione più grande è giocare a tennis...<a href="articoli/passioni.html">Clicca qui per l'articolo completo!</a></p>
+		</article>
+	</section>
+	
+	<footer>Made by Gabriele</footer>
+
+    
+</body>
+</html>
