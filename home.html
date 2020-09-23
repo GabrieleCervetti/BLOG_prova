@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="it">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog di Gabriele Cervetti</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog di Gabriele Cervetti</title>
 <style>
 *	{
 	box-sizing: border-box;
 }
 
 /*Aggiunge un background del colore desiderato*/
-body{
+body	{
 	font-family: Arial;
 	padding: 20px;
 	background: #f1f1f1;	/*scelgo il colore dello sfondo*/
 }
 
-/*Header - titolo del blog; .header ('.class') seleziona tutti gli elementi con la classe header*/
+/*Header/titolo del blog; .header ('.class') seleziona tutti gli elementi con la classe header*/
 .header{
 	padding: 30px;
 	font-size: 40px;
@@ -24,18 +24,24 @@ body{
 	background: white;
 }
 
-/*Creo due colonne una di fianco all'altra di misura diversa (si possono anche creare di ugual misura ed il comando varia leggermente*/
+/*Creo due colonne una di fianco all'altra di misura diversa (si possono anche creare di ugual misura ed il comando varia leggermente)*/
 .leftcolumn	{
 	float: left;
 	width: 75%;
 }
 
 .rightcolumn	{
-	float: right;
+	float: left;
 	width: 25%;
 	padding-left: 20px;
 }
 
+/*immagine prova*/
+.fakeimg	{
+	baclground-color: #aaa;
+	width: 100%;
+	padding: 20px;
+}
 
 /*Effetto carta per la classe card*/
 .card	{
@@ -80,28 +86,23 @@ body{
 		<div class="card">
 			<h2>Home sweet home</h2>
 			<h4>Italia, Milano, 2020</h4>
-			<img src="duomo_milano.jpg" alt="Duomo di Milano" height="100"></div>
+			<div img src="duomo_milano.jpg" alt="Duomo di Milano"></div>
 			<p>Duomo di Milano</p>
-			<p>Il Duomo di Milano è la cattedrale dell'arcidiocesi di Milano. Simbolo 
-			del capoluogo lombardo...<a href="articoli/duomo.html">Clicca qui per l'articolo completo!</a></p>
+			<p>Il Duomo di Milano è la cattedrale dell'arcidiocesi di Milano. Simbolo del capoluogo lombardo...<a href="articoli/duomo.html">Clicca qui per l'articolo completo!</a></p>*/
 		</div>
 		<div class="card">
 			<h2>Viaggi</h2>
 			<h4>America, Miami, 2019</h4>
-			<img src="keywest.jpg" alt="Key West" height="100"></div>
+			<div img src="keywest.jpg" alt="Key West" height="100"></div>
 			<p>Key West</p>
-			<p>Key West (in spagnolo Cayo Hueso, "isola delle ossa") è una città e un'isola situata nel punto 
-			continentale più a sud degli Stati Uniti, nell'arcipelago delle Florida Keys della Contea di Monroe, Florida. 
-			La città è raggiungibile da nord attraverso la U.S. Route 1 e si trova a 208 km da Miami. Cuba nella sua parte 
-			più settentrionale si trova 140 km a sud-sudovest di Key West.</p>
+			<p>Key West (in spagnolo Cayo Hueso, "isola delle ossa") è una città e un'isola situata nel punto continentale più a sud degli Stati Uniti, nell'arcipelago delle Florida Keys della Contea di Monroe, Florida. La città è raggiungibile da nord attraverso la U.S. Route 1 e si trova a 208 km da Miami. Cuba nella sua parte più settentrionale si trova 140 km a sud-sudovest di Key West.</p>
 		</div>
 	</div>
 	<div class="rightcolumn">
 		<div class="card">
 			<h2>Questo sono io</h2>
-			<img src="gabriele.jpg" alt="Gabriele" height="100"></div>
-			<p>Ciao a tutti, sono Gabriele e questo è il mio blog...<a href="articoli/presentazione.html">Clicca qui per 
-			l'articolo completo!</a></p>
+			<div img src="gabriele.jpg" alt="Gabriele" height="100"></div>
+			<p>Ciao a tutti, sono Gabriele e questo è il mio blog...<a href="articoli/presentazione.html">Clicca qui per l'articolo completo!</a></p>*/
 		</div>
 		<div class="card">
 			<h3>Post popolari</h3>
