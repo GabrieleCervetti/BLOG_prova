@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blog di esercitazione</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" href="./css/indexStyle.css">
+  
+</head>
+<body>
+
+	<header>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<img src="./media/icon.png" width="20" height="20" alt="logo">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="articles.html">Articles</a></li>
+						<li><a href="contacts.html">Contacts</a></li>
+						<li><a href="me.html">About me</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+	<section class="container-fluid text-center">    
+		<div class="row content">
+			<div class="col-sm-2 sidenav">
+				<p><a href="music_video.html">Music&Video</a></p>
+				<p><a href="geolocation.html">Where are you?</a></p>
+				<p><a href="contacts.html">Partnership</a></p>
+			</div>
+			<div class="col-sm-10text-left"> 
+				<h1>Send e-mail to gabrielecervetti96@gmail.com:</h1>
+				<div id="formcontacts">
+					<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+						Name:<br>
+						<input type="text" name="Nome" value="il tuo nome"><br>
+						E-mail:<br>
+						<input type="text" name="E-mail" value="la tua e-mail"><br>
+						Comment:<br>
+						<input type="text" name="Commenti" value="commenti"><br><br>
+						<input type="submit" value="Invia">
+						<input type="reset" value="Reset">
+					</form>
+				</div>					
+			</div>
+		</div>
+	</section>
+
+	<footer class="container-fluid text-center">
+		<p>Made by Gabriele Cervetti</p>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/_main.js"></script>
+	
+</body>
+</html>
