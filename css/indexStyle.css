@@ -1,38 +1,121 @@
+@charset "UTF-8";
+
 /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
     
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
     
-    /* Set gray background color and 100% height */
+/* Set gray background color and 100% height */
+.sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+	height: 100vh;
+}
+    
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
     .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 20px;
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
         height: auto;
         padding: 15px;
-      }
-      .row.content {height:auto;} 
     }
+    .row.content {height:auto;} 
+}
 	
+header {
+    border: 2px solid rgba(0, 0, 0, .1);
+	}
 	
-	#formcontacts {
+.col-sm-2	{
+	border-right: 2px solid rgba(0, 0, 0, .1);
+}
+	
+#formcontacts {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
 	}
+	
+footer	{
+    color: #000;
+    margin-bottom: 0;
+	padding-bottom: 1rem;
+	border-top: 2px solid rgba(0, 0, 0, .1);
+    position: absolute;
+    background-color: #EFEFEF;
+	width: 100%
+}
+
+.footer-content{
+	margin: 0 1%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  	grid-gap: 5%;
+    overflow: hidden;
+}
+
+.left-information{
+	text-align: center;
+}
+
+#social{
+	text-align: center;
+}
+
+form{
+	width: 100%;
+}
+
+#contact-us{
+	text-align: center;
+	display: grid;
+	justify-content: center;
+}
+
+.footer-line{ 
+    margin-top: 1rem;	
+    border-width: 5px 5px 5px 5px;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-style: groove;
+    border-color: #d1d1d1;
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+}
+
+.fab {
+	width: 15%;
+	font-size: 15px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10%;
+	padding: 20px;
+}
+
+.fab:hover {
+    opacity: 0.5;
+    color: #c1c1c1;
+    text-decoration: none;
+}
+
+.fa-facebook-square {
+	background: #3B5998;
+	color: white;
+}
+
+.fa-instagram {
+	background: #125688;
+	color: white;
+}
+
+@media (max-width: 998px){
+	.footer-content{
+    	grid-template-columns: auto;
+	}	
+}
+	
+	

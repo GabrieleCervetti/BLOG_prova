@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Blog di esercitazione</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
-  <link rel="stylesheet" href="./css/indexStyle.css">
+	<title>Blog di esercitazione</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="./css/indexStyle.css">
   
 </head>
 <body>
@@ -29,7 +31,6 @@
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="articles.html">Articles</a></li>
 						<li><a href="contacts.html">Contacts</a></li>
 						<li><a href="me.html">About me</a></li>
 					</ul>
@@ -48,8 +49,9 @@
 				<p><a href="geolocation.html">Where are you?</a></p>
 				<p><a href="contacts.html">Partnership</a></p>
 			</div>
-			<div class="col-sm-10text-left"> 
-				<h1>Send e-mail to gabrielecervetti96@gmail.com:</h1>
+			<div class="col-sm-10 text-left"> 
+				<h1>Send e-mail to
+				<h4>gabrielecervetti96@gmail.com</h4>
 				<div id="formcontacts">
 					<form action="mailto:someone@example.com" method="post" enctype="text/plain">
 						Name:<br>
@@ -66,9 +68,37 @@
 		</div>
 	</section>
 
-	<footer class="container-fluid text-center">
-		<p>Made by Gabriele Cervetti</p>
-	</footer>
+	<footer>
+		<div class="footer"> 
+			<div class="footer-line">
+				<div class="footer-content">
+					<div id="social">
+                        <label for="exampleFormControlInput1">
+                            <dt>Seguici sui nostri social</dt>
+                        </label>
+						<p class="left-information">
+                        Puoi trovarci su facebook e instagram. Seguici, resta aggiornato sulle nostre case e condividi con noi la tua esperienza.
+                        </p>
+                        <a href="#" class='fab fa-facebook-square' style='font-size:36px'></a>
+                        <a href="#" class='fab fa-instagram' style='font-size:36px'></a>
+                    </div>
+        
+                    <div id="contact-us">
+						<form action="/action_page.php">
+							<div class="form-group">
+								<label for="email">Email:</label>
+								<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" rows="5" id="comment" placeholder="Write your request" name="text"></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
