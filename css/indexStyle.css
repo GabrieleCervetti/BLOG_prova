@@ -112,6 +112,16 @@ form{
 	color: white;
 }
 
+.fa	{
+	font-size: 30px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.fa:hover	{
+	color: darkblue;
+}
+
 @media (max-width: 998px){
 	.footer-content{
     	grid-template-columns: auto;

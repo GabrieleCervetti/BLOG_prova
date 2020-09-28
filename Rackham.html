@@ -32,7 +32,7 @@
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="index.html">Home</a></li>
 						<li><a href="contacts.html">Contacts</a></li>
-						<li><a href="me.html">About me</a></li>
+						<li><a href="aboutMe.html">About me</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -71,6 +71,7 @@
                 </div>
 				<ul class="list-group list-group-flush comments-container">
                 </ul>
+				<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
 			</div>
 		</div>
 	</section>
@@ -117,6 +118,12 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="js/_main.js"></script>
+	
+	<script>
+	function myFunction(x)	{
+	x.classList.toggle("fa-thumbs-down");
+	}
+	</script>
 	
 </body>
 </html>
