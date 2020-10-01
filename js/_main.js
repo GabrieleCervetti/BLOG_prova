@@ -10,6 +10,19 @@ $(document).ready(function () {
         commentContainer.append(commentRow);
 
     });
-
+	
+	$("#publishPostBtn").click(addPost);
+	
 });
 
+
+function addPost(title,body)	{
+	//creare un item HTML e aggiungerlo nel DOM.
+	var title = $("#postTitle").val();
+	var body = $("#postBody").val();
+	
+	var post = new Post(title, body, true);		//messi pubblici
+	
+	$("#articles").append("<h3>" + post.title + "</h3>");
+	$("#articles").append("<p>" + post.body + "</p>");
+}

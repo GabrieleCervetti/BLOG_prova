@@ -6,6 +6,9 @@
     border-radius: 0;
 }
 
+.navbar-right {
+	margin-top: 7px;
+}
     
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {height: 450px}
@@ -120,12 +123,6 @@ form{
 
 .fa:hover	{
 	color: darkblue;
-}
-
-@media (max-width: 998px){
-	.footer-content{
-    	grid-template-columns: auto;
-	}	
 }
 	
 	
