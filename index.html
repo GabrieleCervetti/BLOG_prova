@@ -61,15 +61,8 @@
 				</p>
 				<hr>
 				<h2 class="text-center">Interesting articles</h2>
-				
-				<h3>Lorem ipsum...</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... <a href="Lorem.html">Leggi di più!</a>
-				
-				<h3>de Finibus Bonorum et Malorum - Cicerone</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error...<a href="Cicerone.html">Leggi di più</a></p>
-
-                <h3>1914 - H. Rackham</h3>
-                <p>But I must explain to you how all this mistaken idea...<a href="Rackham.html">Leggi di più</a></p>
+				<div class="main-articles">
+				</div>
 			</div>
 		</div>
 	</section>
@@ -107,12 +100,12 @@
     </footer>
 	
 	<!-- Modal -->
-	<div class="modal fade" id="newPostModal" tabindex="-1" aria-labelledby="newPostModal" aria-hidden="true">
+	<div class="modal fade" data-backdrop="false" id="newPostModal" tabindex="-1" aria-labelledby="newPostModal" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="newPostModal">Add your post</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<h5 class="modal-title">Add your post</h5>
+					<button type="button" class="close fixed-top" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
@@ -122,6 +115,19 @@
 							<div class="col-sm-12">
 								<input type="text" class="form-control" placeholder="Insert a title" id="postTitle">
 								<textarea class="form-control" placeholder="Insert a text" id="postBody" rows="3"></textarea>
+								
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="publicCheck">
+									<label class="form-check-label" for="publicCheck">
+									Public
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="featuredCheck">
+									<label class="form-check-label" for="featuredCheck">
+									Featured
+									</label>
+								</div>
 							</div>
 						</div>
 					</form>
