@@ -18,6 +18,13 @@ $(document).ready(function () {
 
     });
 	
+	$.get({
+		url: "https://api.npoint.io/24620ef625c768a4f3c4",
+		success: function(data, textStatus, jqXHR){
+			console.log("data", data);
+		}
+	});
+	
 	$("#publishPostBtn").click(addPost);
 	
 	for(var i = 0; i < posts.length; i++)	{
