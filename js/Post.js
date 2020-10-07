@@ -1,7 +1,7 @@
-function Post(title, body, public, featured)	{
+function Post(title, body, pub, featured, tag)	{
 	this.title = title;
 	this.body = body;
-	this.public = public;
+	this.public = pub;
 	this.featured = featured;
-	this.tag = [];
+	this.tag = tag;
 }
